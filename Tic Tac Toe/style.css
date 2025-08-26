@@ -1,0 +1,94 @@
+br{
+    display: none;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(25, 29, 29);
+}
+
+#tic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px; /* thin white lines between buttons */
+  width: 90%;
+  margin: 2% auto;
+  background-color: white; /* white grid background */
+  padding: 0;
+  border: none;
+}
+
+button {
+  background-color: rgb(25, 29, 29); /* black buttons */
+  color: white;
+  font-size: 200%;
+  width: 100%;
+  height: 80px;
+  font-weight: 700;
+  border: none;
+}
+button:focus {
+  outline: none; /* removes the default white border */
+  background-color: rgb(25, 29, 29); /* slightly lighter black */
+}
+
+
+
+button:hover{
+    background-color: rgb(86, 87, 89);
+}
+
+
+
+
+
+@media (min-width: 500px){
+    #tic{
+        width: 400px;
+        margin-top: 2%;
+        
+    }
+    button{
+        height: 80px;
+    }
+
+    
+    #resetDiv{
+        width: 20%;
+        margin: auto;
+    }
+
+}
+
+
+#turne{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(25, 29, 29);
+    width: fit-content;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    padding: 1%;
+    border-radius: 10px;
+    color: white;
+}
+
+#resetDiv{
+    display: flex;
+    justify-content: center;
+}
+#reset{
+    margin: auto;
+   margin-top: 2;
+   width: 80%;
+   background-color: wrgb(25, 29, 29);
+
+}
+
+#reset:hover{
+    background-color: rgb(25, 29, 29);
+    color: rgb(193, 188, 188);
+}
+
+

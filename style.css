@@ -1,0 +1,264 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(43, 42, 42);
+}
+
+.navbar {
+  background-color: rgb(43, 42, 42);
+  overflow: auto;
+  display: flex;       /* makes items align nicely */
+  align-items: center; /* vertical alignment */
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  
+  border-bottom: 1px solid rgb(67, 66, 66);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+}
+
+.nav-links a {
+    position: relative;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+#img {
+  width: 40px;   /* fixed size instead of % */
+  height: auto;  /* keeps aspect ratio */
+  display: block; /* removes extra spacing below image */
+  font-family: Montserrat;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+.nav-links a:hover {
+  color: #bbbbbb;  /* darken text on hover */
+}
+
+.nav-links a::before,
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;           /* underline at the bottom */
+  height: 2px;
+  width: 0;            /* start hidden */
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-links a::before {
+  left: 50%;           /* start from the middle */
+}
+
+.nav-links a::after {
+  right: 50%;          /* start from the middle */
+}
+
+.nav-links a:hover::before {
+  width: 45%;          /* expand left */
+}
+
+.nav-links a:hover::after {
+  width: 45%;          /* expand right */
+}
+
+
+
+
+h2{
+    padding: 0%;
+    margin: 0%;
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+}
+p{
+    padding: 0%;
+    margin: 0%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+}
+
+section{
+    padding: 0%;
+    margin: 0%;
+}
+
+.container{
+    color: white;
+    background-color: rgb(43, 42, 42);
+    padding: 0%;
+    margin: 0%;
+    padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+    border-bottom: 1px solid rgb(67, 66, 66);
+   
+}
+
+
+#about{
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#text{
+     margin-top: 30px;
+     margin-bottom: 30px;
+}
+
+
+#project-con{
+    background-color: rgb(43, 42, 42);
+    padding: 0%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 100px;
+    border-radius: 10px;
+    color: white;
+    width: 60%;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.pro{
+  position: relative;
+  transition: color 0.3s ease;
+  background-color: rgb(46, 46, 46);
+  padding: 0%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 0px;
+    color: white;
+    width: 60%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    font-size: larger;
+    overflow: hidden; /* keeps lines inside button */
+}
+
+.pro:hover{
+  color: #bbbbbb;
+  background-color: rgb(37, 36, 36);
+  cursor: pointer;
+}
+
+
+/* underline animation */
+.pro::before,
+.pro::after {
+  content: "";
+  position: absolute;
+  bottom: 0;              /* line at the bottom of the button */
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.pro::before {
+  left: 50%;              /* start in the middle */
+}
+
+.pro::after {
+  right: 50%;             /* start in the middle */
+}
+
+.pro:hover::before {
+  width: 50%;             /* expand left */
+}
+
+.pro:hover::after {
+  width: 50%;             /* expand right */
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px){
+  .navbar {
+  background-color: rgb(43, 42, 42);
+  overflow: auto;
+  display: flex;       /* makes items align nicely */
+  align-items: center; /* vertical alignment */
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
+  
+  border-bottom: 1px solid rgb(67, 66, 66);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+}
+.pro{
+  background-color: rgb(46, 46, 46);
+  padding: 0%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 0px;
+    color: white;
+    width: 90%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    font-size: larger;
+}
+#project-con{
+    background-color: rgb(43, 42, 42);
+    padding: 0%;
+    margin: auto;
+    padding: 2%;
+    margin-top: 100px;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    margin-bottom: 100px;
+    text-align: center;
+}
+#about{
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.container{
+    color: white;
+    background-color: rgb(43, 42, 42);
+    padding: 0%;
+    margin: 0%;
+    padding: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
+    border-bottom: 1px solid rgb(67, 66, 66);
+   
+}
+
+}

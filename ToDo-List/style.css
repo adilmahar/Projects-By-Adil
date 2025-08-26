@@ -1,0 +1,82 @@
+
+body{
+    margin: 0%;
+    padding: 0%;
+     background-color: rgb(35, 38, 40);
+}
+#heading{
+    text-align: center;
+    
+    
+    
+    padding: 2%;
+    background-color: rgb(35, 38, 40);
+    font-size: 200%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid rgb(105, 98, 98);
+
+
+
+}
+p{
+    margin: 0%;
+    padding: 0%;
+}
+
+#todo{
+    
+    text-align: center;
+    padding: 2%;
+    
+    background-color:  rgb(35, 38, 40);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#listitem{
+    background-color:  rgb(69, 72, 73);
+    text-align: left;
+    padding: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: 22px;
+    white-space: nowrap;       /* Prevents text from wrapping to the next line */
+  overflow-x: auto;          /* Enables horizontal scrolling */
+  overflow-y: hidden;        /* Prevents vertical overflow */
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+
+
+#submit{
+    background-color: rgb(91, 88, 85);
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1%;
+}
+
+
+#newtask{
+    background-color: rgb(91, 88, 85);
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (min-width: 650px){
+    #heading{
+        padding: 1%;
+    }
+    #listitem{
+        width: 600px;
+        margin: auto;
+        margin-top: 0.5%;
+        margin-bottom:0.5% ;
+    }
+    
+}
