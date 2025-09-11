@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="outerbody">
+        <div id="display">
+            <h1 id="left-half">00</h1>
+            <h1>:</h1>
+            <h1 id="right-half">00</h1>
+        </div>
+        <div id="controls">
+            
+            <button class="control-button" onclick="stop()">Stop</button>
+            <button class="control-button" onclick="reset()">Reset</button>
+            <button class="control-button" id="start" onclick="startclock()">Start</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
